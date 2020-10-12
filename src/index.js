@@ -9,6 +9,9 @@ import './plugins/axios'
 import './plugins/umi-request'
 import {BrowserRouter as Router} from 'react-router-dom';
 
+const show = () =>{
+    console.log('leader')
+};
 
 ReactDOM.render(
     <Router>
