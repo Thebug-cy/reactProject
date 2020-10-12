@@ -7,10 +7,13 @@ import './assets/css/base.css'
 
 import './plugins/axios'
 import './plugins/umi-request'
+import {BrowserRouter as Router} from 'react-router-dom';
 
 
 
 ReactDOM.render(
-    <div>hello</div>,
+    <Router>
+        <div>hello</div>
+    </Router>,
   document.getElementById('root')
 );

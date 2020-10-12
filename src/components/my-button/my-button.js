@@ -44,7 +44,10 @@ export default class MyButton extends Component{
                 // className={`My-button-circ My-button-circ-small`}
                 className={`${styles[`my-button-${type}`]} ${styles[`my-button-${type}--${size}`]}`}
                 style={style}
-                onClick={onClick}
+                onClick={(e)=>{
+                    onClick(e);
+                    e.stopPropagation()
+                }}
                 disabled={disabled}
             >
                 {children ? children : '按 钮'}
