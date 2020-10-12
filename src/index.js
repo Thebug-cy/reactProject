@@ -5,11 +5,9 @@ import './assets/js/font'
 //通用样式
 import './assets/css/base.css'
 
-import './plugins/axios'
-import './plugins/umi-request'
 import {BrowserRouter as Router} from 'react-router-dom';
 
-
+console.log('搞事情')
 
 ReactDOM.render(
     <Router>
